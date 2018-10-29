@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  environment:
+    http_proxy: http://renoproxy.copart.com:3128
+    https_proxy: http://renoproxy.copart.com:3128
+ 
+  roles:
+   - instana-agent-ansible
+
